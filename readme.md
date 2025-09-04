@@ -12,7 +12,7 @@ This notebook presents a spectral method for computing derivatives and fields in
 - Derive velocity components $\vec{\mathbf{u}}=\left(v_x, v_y\right)$ from the stream function using spectral differentiation.
 - Compute the vorticity from the velocity field: $\omega = \partial v_y / \partial x - \partial v_x / \partial y$.
 - Compute the Okubo-Weiss field: $Q = (\partial^2 \psi / \partial x \partial y)^2 - (\partial^2 \psi / \partial x^2)(\partial^2 \psi / \partial y^2)$.
-- Perform numerical checks to validate that the derived velocities satisfy the continuity condition ($\nabla \cdot \vec{v} = 0$) and other stream function properties.
+- Perform numerical checks to validate that the derived velocities satisfy the continuity condition $\left(\nabla \cdot \vec{v}=0\right)$ and other stream function properties.
 - Visualize all fields using plots with custom colormaps and streamlines.
 
 ## 💻 Code
@@ -28,7 +28,7 @@ $ python -m unittest tests/test_properties.py
 ```
 
 The tests verify:
-- The continuity equation ($\nabla \cdot \vec{v} \approx 0$) for velocities derived from a stream function $\psi$.
+- The continuity equation $\left(\nabla \cdot \vec{v}=0\right)$ for velocities derived from a stream function $\psi$.
 - Numerical relationships between velocity components and stream function derivatives.
 - That the implementation correctly handles random vs. stream-function-derived fields.
 
@@ -38,10 +38,10 @@ The tests verify:
 
 The notebook computes and visualizes:
 - The synthetic, randomly generated stream function $\psi$ with its isolines.
-- The velocity field components $v_x$ and $v_y$ and their magnitude $|\vec{\mathbf{u}}|$.
+- The velocity field components $v_x$ and $v_y$ and their magnitude $\left|\vec{\mathbf{u}}\right|$.
 - The vorticity $\omega$ with overlaid streamlines to indicate the direction of the flow.
 - The Okubo-Weiss field $Q$, highlighting vorticity ($Q < 0$, blue) and strain ($Q > 0$, green) dominated regions with different colors.
-- Numerical validation plots showing continuity and derivative relationships on logarithmic scales. Highlighting the correctness of the equations and the numerical implementation.
+- Numerical validation plots show that the mentioned equalities hold for the floating-point number precision that is used in the code (around $10^{-15}$). They highlight the correctness of the analytical equations and the numerical implementation in the code.
 
 ## 📚 References
 
