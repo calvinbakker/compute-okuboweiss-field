@@ -1,7 +1,7 @@
 [project]
 name = "compute-okuboweiss-field"
 version = "1.0.0"
-description = "Computes and visualizes the Okubo-Weiss field for a randomly generated stream function."
+description = "Computes and visualizes the Okubo-Weiss field for a synthetic, randomly generated stream function."
 readme = "readme.md"
 requires-python = ">=3.9"
 license = {file = "LICENSE.txt"}
