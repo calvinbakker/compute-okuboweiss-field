@@ -9,7 +9,7 @@ The goal of this project is to demonstrate the computation of the **Okubo-Weiss 
 
 This notebook presents a spectral method for computing derivatives and fields in fluid dynamics:
 - Generate a random stream function $\psi$ using Gaussian filtering of a two-dimensional white noise field.
-- Derive velocity components $\vec{\mathbf{u}}=(v_x, v_y)$ from the stream function using spectral differentiation.
+- Derive velocity components $\vec{\mathbf{u}}=\left(v_x, v_y\right)$ from the stream function using spectral differentiation.
 - Compute the vorticity from the velocity field: $\omega = \partial v_y / \partial x - \partial v_x / \partial y$.
 - Compute the Okubo-Weiss field: $Q = (\partial^2 \psi / \partial x \partial y)^2 - (\partial^2 \psi / \partial x^2)(\partial^2 \psi / \partial y^2)$.
 - Perform numerical checks to validate that the derived velocities satisfy the continuity condition ($\nabla \cdot \vec{v} = 0$) and other stream function properties.
@@ -40,7 +40,7 @@ The notebook computes and visualizes:
 - The synthetic, randomly generated stream function $\psi$ with its isolines.
 - The velocity field components $v_x$ and $v_y$ and their magnitude $|\vec{\mathbf{u}}|$.
 - The vorticity $\omega$ with overlaid streamlines to indicate the direction of the flow.
-- The Okubo-Weiss field $Q$, highlighting strain ($Q > 0$, blue) and vorticity ($Q < 0$, red) dominated regions with different colors.
+- The Okubo-Weiss field $Q$, highlighting vorticity ($Q < 0$, blue) and strain ($Q > 0$, green) dominated regions with different colors.
 - Numerical validation plots showing continuity and derivative relationships on logarithmic scales. Highlighting the correctness of the equations and the numerical implementation.
 
 ## 📚 References
