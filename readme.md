@@ -36,6 +36,8 @@ The tests verify:
 
 ## 📊 Results
 
+![example_image2](data/example_image2.png)
+
 The notebook computes and visualizes:
 - The synthetic, randomly generated stream function $\psi$ with its isolines.
 - The velocity field components $v_x$ and $v_y$ and their magnitude $\left|\vec{\mathbf{u}}\right|$.
