@@ -1,6 +1,8 @@
 # 📃 Notebook: `compute-okuboweiss-field`
 In this notebook, we compute and visualize the Okubo-Weiss field for a randomly generated stream function.
 
+![example_image](data/example_image.png)
+
 ## 🎯 Goal
 
 The goal of this project is to demonstrate the computation of the **Okubo-Weiss parameter** $Q$, which is used to distinguish between strain-dominated ($Q > 0$) and vorticity-dominated ($Q < 0$) regions in a two-dimensional flow field. By using a **synthetic, randomly generated stream function** $\psi$, the notebook illustrates how to derive velocity fields, compute vorticity, and calculate the Okubo-Weiss field. Numerical validation checks are included both as automated tests and visualized.
@@ -33,8 +35,6 @@ The tests verify:
 - That the implementation correctly handles random vs. stream-function-derived fields.
 
 ## 📊 Results
-
-![example_image](data/example_image.png)
 
 The notebook computes and visualizes:
 - The synthetic, randomly generated stream function $\psi$ with its isolines.
