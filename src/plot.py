@@ -1,7 +1,5 @@
 from src.config import *
 from src.functions import *
-from typing import Any
-from matplotlib.colors import LogNorm
 
 
 def LaTeX(truefalse: bool) -> None:
