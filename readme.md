@@ -36,12 +36,13 @@ The tests verify:
 
 ## 📊 Results
 
+An example Okubo-Weiss field is visualized here:
 ![example_image2](data/example_image2.png)
 
-The notebook computes and visualizes:
-- The synthetic, randomly generated stream function $\psi$ with its isolines.
+The notebook provides the following:
+- A visualization of the generated stream function $\psi$ with its isolines.
 - The velocity field components $v_x$ and $v_y$ and their magnitude $\left|\vec{\mathbf{u}}\right|$.
-- The vorticity $\omega$ with overlaid streamlines to indicate the direction of the flow.
+- The vorticity field $\omega$ with streamlines to indicate the direction of the flow.
 - The Okubo-Weiss field $Q$, highlighting vorticity ($Q < 0$, blue) and strain ($Q > 0$, green) dominated regions with different colors.
 - Numerical validation plots show that the mentioned equalities hold for the floating-point number precision that is used in the code (around $10^{-15}$). They highlight the correctness of the analytical equations and the numerical implementation in the code.
 
